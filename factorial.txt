@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Factorial_of_a_given_number
+{   
+ internal class Program
+    {  
+  static void Main(string[] args)
+        {  
+ 	      ulong num;
+            ulong result = 1;
+            Console.Write("Enter an Integer : ");
+            num = Convert.ToUInt64(Console.ReadLine());
+            for(ulong i = 1; i<= num; ++i)
+            { result = result * i; }
+            Console.WriteLine("Factorial of {0} is : {1}", num, result);
+            Console.ReadLine();   
+    } 
+     }
+ }

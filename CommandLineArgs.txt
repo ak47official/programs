@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace akash_01_11_2022_____Hello_word
+{    internal class Program  
+     {
+       static void Main(string[] args) 
+      {
+        if(args.Length > 0) 
+ {
+  Console.WriteLine("Argument Lenth : " +  args.Length);
+                foreach(string arg in args)  
+         {
+                  Console.WriteLine(arg);
+          } 
+   }
+            else 
+   {
+                Console.WriteLine("Please enter command line argument"); 
+    }
+            Console.ReadLine();
+        }
+    }
+}

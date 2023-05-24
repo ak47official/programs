@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace explicit_conversion
+{   
+ class Program
+    {     
+ static void Main(string[] args)
+        {  
+    double numDouble = 1.23;
+            int numInt = (int)numDouble;
+            Console.WriteLine("Original double Value: " + numDouble);
+            Console.WriteLine("Converted int Value: " + numInt);
+            Console.ReadLine();       
+          }  
+      } 
+ }

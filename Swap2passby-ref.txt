@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace Swapping_of_2_number_using_pass_by_ref
+{
+    class swapping_of_two_int
+    {
+        public void swap(ref int num1, ref int num2)
+        {
+            int temp;
+            Console.WriteLine("Num1 = {0},\tNum2 = {1}", num1, num2);
+            temp = num1;
+            num1 = num2;
+            num2 = temp;
+            Console.WriteLine("Num1 = {0},\tNum2 = {1}", num1, num2);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1, num2;
+            swapping_of_two_int swapping_Of_Two_Int = new swapping_of_two_int();
+            while(true)
+            {
+                Console.Write("Enter the value of num1 : ");
+                num1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter the value of num2 : ");
+                num2 = Convert.ToInt32(Console.ReadLine());
+                swapping_Of_Two_Int.swap(ref num1, ref num2);                
+            }  Console.ReadLine();      }  }  }

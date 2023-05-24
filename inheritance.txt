@@ -1,0 +1,33 @@
+namespace MiltilevelInheritance
+{
+    class car
+    {
+        protected string model;
+        protected string color;
+        protected int price;
+
+        protected void PrintCarInformation()
+        {
+            Console.WriteLine("Model " + model);
+            Console.WriteLine("Color " + color);
+            Console.WriteLine("Price " + price);
+        }
+    }
+    class maruti : car
+    {
+        float mileage;
+        void Printmileage()
+        {
+            Console.WriteLine("Mileage " + mileage);
+        }
+        public static void Main(String[] args)
+        {
+            maruti myCar = new maruti();
+            myCar.model = "GTR ";
+            myCar.color = "Blue ";
+            myCar.price = 1000000000;
+            myCar.mileage = 2.5f;
+            myCar.PrintCarInformation();
+            myCar.Printmileage();
+            Console.ReadLine();
+        }    }    }
